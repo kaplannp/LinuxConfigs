@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+import re
+import os
+from sys import argv
+
+src = argv[1]
+rawName = src[:-4]
+dst = argv[2]
+os.system("pdf2svg {}.pdf .{}.svg".format(rawName, rawName))
+os.system("inkscape .{}.svg -M {}".format(rawName, dst))
+os.system("rm .{}.svg".format(rawName))

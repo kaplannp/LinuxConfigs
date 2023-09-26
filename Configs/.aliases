@@ -1,0 +1,23 @@
+#l does colors
+alias l="ls --color"
+#firefox launcher
+alias firefox='/usr/bin/firefox&'
+#open conveniently
+alias open='xdg-open'
+#launch conda if running python. I generally use this as a calculator
+alias calc='conda activate sage && sage'
+#custom scripts
+alias strpspace='~/.Tools/Scripts/spaces_with_underscores.py'
+alias zoom='~/.Tools/Scripts/Zoom_Launcher/zoom_launch.py'
+alias gitauth='/home/kaplannp/.Tools/Scripts/ubuntu-git-authenticator/git-credential-authenticator.py'
+alias caenVnc="/home/kaplannp/.Tools/Scripts/caenVnc.sh"
+#ip addrs
+CYBER="67.169.51.143"
+
+#keyswaper
+alias x='xmodmap ~/.Xmodmap'
+
+#indirectly adding to path
+#for some things it doesn't make sense to add a whole set of executables to the path
+alias nxserver='/usr/NX/bin/nxserver'
+alias ncu-gui='/usr/local/NVIDIA-Nsight-Compute/ncu-ui'
