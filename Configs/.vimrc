@@ -15,6 +15,7 @@ execute pathogen#infect()
 
 "config tab complete (base of supertab)
 set complete-=i
+set cot=popuphidden
 
 filetype plugin indent on
 

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/n/eecs583a/home/kaplannp/.vim'
 let g:netrw_dirhist_5='/home/kaplannp/MyFiles/2023-2024/Classes/Eecs470/Data/BtbTagWidth'
 let g:netrw_dirhist_4='/home/kaplannp/MyFiles/2023-2024/MyWebsite03/stylesheets'
 let g:netrw_dirhist_3='/home/kaplannp/Desktop'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/home/kaplannp/.config'
 let g:netrw_dirhist_9='/home/kaplannp/.ssh'
 let g:netrw_dirhist_8='/home/kaplannp/MyFiles/Summer/LearningWeb/Udemy/Project03'
 let g:netrw_dirhist_7='/home/kaplannp/MyFiles/Summer/LearningWeb/Udemy/Project03/routes'
-let g:netrw_dirhist_6='/home/kaplannp/MyFiles/Summer/FaceTrainer/views'
