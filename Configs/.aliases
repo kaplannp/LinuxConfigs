@@ -6,16 +6,23 @@ alias firefox='/usr/bin/firefox&'
 alias open='xdg-open'
 #launch conda if running python. I generally use this as a calculator
 alias calc='conda activate sage && sage'
+#colorful grep
+alias grep='grep -n --color=auto'
 #custom scripts
 alias strpspace='~/.Tools/Scripts/spaces_with_underscores.py'
 alias zoom='~/.Tools/Scripts/Zoom_Launcher/zoom_launch.py'
 alias gitauth='/home/kaplannp/.Tools/Scripts/ubuntu-git-authenticator/git-credential-authenticator.py'
 alias caenVnc="/home/kaplannp/.Tools/Scripts/caenVnc.sh"
+#alias vi=vim
 #ip addrs
 CYBER="67.169.51.143"
+#llvm
+LLVM_DIR="/usr/lib/llvm-17"
 
 #keyswaper
 alias x='xmodmap ~/.Xmodmap'
+
+alias vi=vim
 
 #indirectly adding to path
 #for some things it doesn't make sense to add a whole set of executables to the path

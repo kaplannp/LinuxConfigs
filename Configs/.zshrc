@@ -27,3 +27,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH="$HOME/.Tools/bin:$PATH"
+export PATH="/home/kaplannp/intel/oneapi/vtune/2023.2.0/bin64:$PATH"
+export PATH="/opt/IDriveForLinux/bin:$PATH"
+export PATH="/usr/lib/llvm-17/bin:$PATH"
+

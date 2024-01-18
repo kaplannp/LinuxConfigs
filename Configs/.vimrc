@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'ervandew/supertab'
+Plugin 'preservim/nerdcommenter'
 call vundle#end()
 "Pathogen
 execute pathogen#infect()
@@ -28,8 +29,10 @@ augroup templates
   autocmd BufNewFile scratch.cpp 0r ~/.vim/templates/skeleton.c
   autocmd BufNewFile main.cpp 0r ~/.vim/templates/skeleton.c
   autocmd BufNewFile Main.java 0r ~/.vim/templates/skeleton.java
+  autocmd BufNewFile paperSum.txt 0r ~/.vim/templates/skeletonPaperSum.txt
 augroup END
 
+syntax on
 "toggle line numbers
 set nu
 "set the shiftwidth by default
@@ -86,7 +89,19 @@ endfunction
 
 command ToPdf :call Ppdf()
 
-"copy paste
-vmap <Space> :w! $HOME/.vim/tmpClipboard<CR>
-nmap <Space> :r $HOME/.vim/tmpClipboard<CR>
+"copy paste. This overwrites ability to store into s, but I think ok. you've
+"got 25 other registers. Now s refers to system clipboard allowing communication
+"between tmux windows on a ssh connection
+vmap "sy :w! $HOME/.vim/tmpClipboard<CR>
+nmap "sp :r $HOME/.vim/tmpClipboard<CR>
 
+"TODO Magic greper
+"function! EchoCursor()
+"  call feedkeys("*Nve\"ay")
+"  let word = @a
+"  call feedkeys(": echo blah" . word . "<CR>")
+"  echom system("echo " . word ."> out")
+"endfunction
+
+"command EchoCursor :call EchoCursor()
+"

@@ -1,1 +1,2 @@
-cd $HOME/LinuxConfigs
+#ifndef CURRENTDEPOSITION_H_
+#define CURRENTDEPOSITION_H_
